@@ -76,12 +76,14 @@ def test_8_chars_password_without_valided_special_character_1():
         # when
         validator.password_validate()
 
+
 def test_8_chars_password_without_valided_special_character_2():
     # given
     validator = PasswordValidator(content="c^aBc^a1")
     with pytest.raises(Exception):  # then
         # when
         validator.password_validate()
+
 
 def test_8_chars_password_without_valided_special_character_3():
     # given
